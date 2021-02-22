@@ -113,6 +113,36 @@ Staged: 暂存状态，执行**git commit**则将修改同步到库中，此时�
 
 ## 7.使用码云/Github
 
+生成 ssh 公钥
+
+```js
+// 进入 C:\Users\Administrator\.ssh
+
+// 用git命令行生成公钥，后面的 -t rsa 为加密方式
+ssh-keygen -t rsa
+```
+
+公钥文件中的文件打开复制写到gitee/github中
+
 ## 8.IDEA中集成Git
 
 ## 9.Git分支
+
+```js
+// 列出本地所有分支
+$ git branch
+// 列出所有远程分支
+$ git branch -r
+// 新建一个分支，但依然停留在当前分支
+$ git branch [branch-name]
+// 新建一个分支，并切换到该分支
+$ git branch -b [branch]
+// 合并指定分支到当前分支
+$ git  merge [branch]
+// 删除分支
+$ git branch -d [branch-name]
+// 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+
+```
